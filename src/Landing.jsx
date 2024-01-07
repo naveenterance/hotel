@@ -37,27 +37,10 @@ const Landing = () => {
 
   return (
     <>
-      <div className="flex-col  relative overflow-hidden text-slate-200 h-1/6">
-        <div>
-          <img
-            src="https://qresorts.in/imageserve/0/assets/images/title-4.jpg"
-            className="object-cover w-full h-full"
-            alt="Moving Image"
-          />
-        </div>
-
-        <motion.div
-          className=" w-full p-4  z-50  shadow-xl   bg-slate-900  "
-          initial={{ translateY: 0 }}
-          animate={controls}
-          transition={{
-            type: "spring",
-            duration: 0.3,
-            stiffness: 50,
-            damping: 10,
-          }}
-        >
-          <div className="flex  ">
+      <div className="flex-col  relative overflow-y-hidden   text-slate-200 ">
+        <img src="https://qresorts.in/imageserve/0/assets/images/title-4.jpg" />
+        <div className=" p-4  z-50    bg-slate-900    ">
+          <div className="flex    w-full">
             <img src="./logo.png" className=" w-12 h-12" />
             <div className="  font-bold  ">
               {" "}
@@ -298,7 +281,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </>
   );

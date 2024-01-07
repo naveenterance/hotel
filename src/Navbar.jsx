@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 const Navbar = () => {
   return (
     <>
-      <div className="w-screen flex justify-center">
-        <nav className="fixed top-0 flex justify-evenly  text-slate-50 w-1/2 p-4 z-50 font-extrabold mx-auto rounded-xl mt-2">
+      <div className="w-screen flex justify-center ">
+        <nav className="fixed top-0 flex justify-evenly  text-slate-50 w-1/2 p-4 z-50 font-extrabold mx-auto rounded-xl mt-2 bg-slate-900">
           <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400">
             <span> Home</span>
 
