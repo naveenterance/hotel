@@ -12,7 +12,7 @@ export default {
         "ocean-700": "#0077CC",
       },
       fontFamily: {
-        Italiana: ["Italiana"],
+        Italiana: ["Libre Baskerville"],
         Raleway: ["Raleway"],
       },
       colors: {
