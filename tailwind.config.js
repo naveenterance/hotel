@@ -15,6 +15,14 @@ export default {
         Italiana: ["Italiana"],
         Raleway: ["Raleway"],
       },
+      colors: {
+        slate: {
+          900: "#0c0c04",
+        },
+        yellow: {
+          400: "#bfbf3f",
+        },
+      },
     },
   },
   plugins: [],
