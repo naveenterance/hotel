@@ -15,10 +15,6 @@ const Landing = () => {
     setValue(newValue);
   };
 
-  const { scrollY } = useScroll();
-
-  const scale = useTransform(scrollY, [500, 300], [0, 1]);
-
   const [current, setCurrent] = useState(4);
 
   const [drawing, setDrawing] = useState(true);
@@ -32,14 +28,7 @@ const Landing = () => {
 
   return (
     <>
-      <motion.div
-        className="flex-col  relative    text-slate-200 "
-        initial="initial"
-        whileInView="animate"
-        style={{
-          scale: scale,
-        }}
-      >
+      <motion.div className="flex-col  relative    text-slate-200 ">
         {current == 1 && (
           <img
             src="https://qresorts.in/uploads/59991b4105041_1.jpg"

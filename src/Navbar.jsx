@@ -77,7 +77,7 @@ const Navbar = () => {
               : "animate__animated animate__fadeInLeft"
           }   text-slate-50  p-4  font-extrabold m-auto  text-2xl  bg-slate-900  justify-center items-center `}
         >
-          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400  mt-24 mb-4 w-1/2 mx-auto   ">
+          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400  mt-24 mb-4 w-1/2 mx-24   ">
             <span> Home</span>
 
             <span className="absolute left-0 top-0 h-[2px] w-0 bg-yellow-400 transition-all duration-100 group-hover:w-full" />
@@ -88,7 +88,7 @@ const Navbar = () => {
 
             <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-yellow-400 transition-all delay-300 duration-100 group-hover:h-full" />
           </button>{" "}
-          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400 my-4 w-1/2 mx-auto">
+          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400 my-4 w-1/2 mx-24">
             <span>Experiences</span>
 
             <span className="absolute left-0 top-0 h-[2px] w-0 bg-yellow-400 transition-all duration-100 group-hover:w-full" />
@@ -99,7 +99,7 @@ const Navbar = () => {
 
             <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-yellow-400 transition-all delay-300 duration-100 group-hover:h-full" />
           </button>{" "}
-          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400 my-4 w-1/2 mx-auto">
+          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400 my-4 w-1/2 mx-24">
             <span> Gallery</span>
 
             <span className="absolute left-0 top-0 h-[2px] w-0 bg-yellow-400 transition-all duration-100 group-hover:w-full" />
@@ -110,7 +110,7 @@ const Navbar = () => {
 
             <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-yellow-400 transition-all delay-300 duration-100 group-hover:h-full" />
           </button>{" "}
-          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400 my-4 w-1/2 mx-auto">
+          <button className="group relative px-4   transition-colors duration-[400ms] hover:text-yellow-400 my-4 w-1/2 mx-24">
             <span> Contact</span>
 
             <span className="absolute left-0 top-0 h-[2px] w-0 bg-yellow-400 transition-all duration-100 group-hover:w-full" />
