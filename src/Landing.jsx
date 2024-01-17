@@ -17,7 +17,7 @@ const Landing = () => {
 
   const { scrollY } = useScroll();
 
-  const scale = useTransform(scrollY, [500, 0], [0, 1]);
+  const scale = useTransform(scrollY, [500, 300], [0, 1]);
 
   const [current, setCurrent] = useState(4);
 
@@ -77,20 +77,20 @@ const Landing = () => {
             className="w-full h-96 object-cover animate__animated animate__backInRight "
           />
         )}
-        <div className=" px-12 py-4  z-50    bg-slate-900  lg:flex  ">
-          <p className="text-9xl text-yellow-300 font-Italiana mb-4 animate__animated animate__fadeInDown">
-            Q
-          </p>
+        <div className=" px-12 py-4  z-50    bg-slate-900   lg:flex  ">
           <div className="flex-col my-auto">
             <p className="font-Italiana  ">
-              <p className="my-auto opacity-75 text-4xl flex">
-                <p className="animate__animated animate__fadeInDown mr-2">
+              <p className=" opacity-75 lg:text-4xl  text-xl flex">
+                <p className="lg:text-9xl text-5xl text-yellow-300 font-Italiana mb-4 animate__animated animate__fadeInDown">
+                  Q
+                </p>
+                <p className="animate__animated animate__fadeInDown mr-2 my-auto">
                   uilon
                 </p>{" "}
-                <p className="animate__animated animate__fadeInDown animate__delay-1s mr-2">
+                <p className="animate__animated animate__fadeInDown animate__delay-1s mr-2 my-auto">
                   Beach
                 </p>{" "}
-                <p className="animate__animated animate__fadeInDown animate__delay-2s">
+                <p className="animate__animated animate__fadeInDown animate__delay-2s my-auto">
                   Hotel
                 </p>
               </p>
@@ -220,14 +220,15 @@ const Landing = () => {
             </div>
           </div>
           <div className="lg:w-1/2 m-auto flex-col ">
-            <p className="opacity-25 animate__animated animate__fadeInDown ">
-              Check availablity
+            <p className=" animate__animated animate__fadeInDown ">
+              <p className="opacity-25 font-semibold">Check availablity</p>
             </p>
             <div className="flex animate__animated animate__fadeInDown ">
               <Datepicker
                 primaryColor={"yellow"}
                 value={value}
                 onChange={handleValueChange}
+                classNames="z-50"
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -244,8 +245,8 @@ const Landing = () => {
                 />
               </svg>
             </div>
-            <div className="flex p-2">
-              <button className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
+            <div className="flex ">
+              <button className="group relative lg:lg:px-4 px-2 px-2 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
                 <span>
                   {" "}
                   <svg
@@ -275,7 +276,7 @@ const Landing = () => {
                 <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-yellow-400 transition-all delay-300 duration-100 group-hover:h-full" />
               </button>
 
-              <button className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
+              <button className="group relative lg:px-4 px-2 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
                 <span>
                   {" "}
                   <svg
@@ -306,7 +307,7 @@ const Landing = () => {
               </button>
 
               <div>
-                <button className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
+                <button className="group relative lg:px-4 px-2 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
                   <span>
                     {" "}
                     <svg
@@ -337,7 +338,7 @@ const Landing = () => {
                 </button>
               </div>
               <div>
-                <button className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
+                <button className="group relative lg:px-4 px-2 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
                   <span>
                     {" "}
                     <svg
@@ -368,7 +369,7 @@ const Landing = () => {
                 </button>
               </div>
               <div>
-                <button className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
+                <button className="group relative lg:px-4 px-2 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
                   <span>
                     {" "}
                     <svg
@@ -398,12 +399,43 @@ const Landing = () => {
                   <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-yellow-400 transition-all delay-300 duration-100 group-hover:h-full" />
                 </button>
               </div>
+              <div>
+                <button className="group relative lg:px-4 px-2 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-yellow-400">
+                  <span>
+                    {" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 50 50"
+                      fill="#FFFFFF"
+                      className="animate__animated animate__fadeIn animate__delay-5s"
+                    >
+                      <path d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z"></path>
+                    </svg>
+                  </span>
+
+                  {/* TOP */}
+                  <span className="absolute left-0 top-0 h-[2px] w-0 bg-yellow-400 transition-all duration-100 group-hover:w-full" />
+
+                  {/* RIGHT */}
+                  <span className="absolute right-0 top-0 h-0 w-[2px] bg-yellow-400 transition-all delay-100 duration-100 group-hover:h-full" />
+
+                  {/* BOTTOM */}
+                  <span className="absolute bottom-0 right-0 h-[2px] w-0 bg-yellow-400 transition-all delay-200 duration-100 group-hover:w-full" />
+
+                  {/* LEFT */}
+                  <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-yellow-400 transition-all delay-300 duration-100 group-hover:h-full" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div className="px-8 flex justify-center  animate__animated animate__backInUp animate__slow">
           <img
-            src="https://qresorts.in/imageserve/0/assets/images/title-4.jpg"
+            src="https://qresorts.in/uploads/59991b4105041_1.jpg"
             class={`w-1/6 rounded-xl mr-2 object-cover ${
               current != 1 ? "opacity-10" : "opacity-100"
             } transition-opacity duration-300 ease-in`}
